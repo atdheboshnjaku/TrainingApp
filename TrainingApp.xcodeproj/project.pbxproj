@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ADC857F729BB5A3B009C2877 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC857F629BB5A3B009C2877 /* User.swift */; };
+		ADC857F929BB5BC0009C2877 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC857F829BB5BC0009C2877 /* HomeViewController.swift */; };
+		ADC857FB29BB5D19009C2877 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC857FA29BB5D19009C2877 /* SignUpViewController.swift */; };
+		ADC857FD29BB5D8F009C2877 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC857FC29BB5D8F009C2877 /* ForgotPasswordViewController.swift */; };
 		ADE78B7D29BB4541003FEC44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE78B7C29BB4541003FEC44 /* AppDelegate.swift */; };
 		ADE78B7F29BB4541003FEC44 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE78B7E29BB4541003FEC44 /* SceneDelegate.swift */; };
-		ADE78B8129BB4541003FEC44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE78B8029BB4541003FEC44 /* ViewController.swift */; };
+		ADE78B8129BB4541003FEC44 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE78B8029BB4541003FEC44 /* LoginViewController.swift */; };
 		ADE78B8429BB4541003FEC44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE78B8229BB4541003FEC44 /* Main.storyboard */; };
 		ADE78B8729BB4541003FEC44 /* TrainingApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = ADE78B8529BB4541003FEC44 /* TrainingApp.xcdatamodeld */; };
 		ADE78B8929BB4542003FEC44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE78B8829BB4542003FEC44 /* Assets.xcassets */; };
@@ -37,10 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ADC857F629BB5A3B009C2877 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ADC857F829BB5BC0009C2877 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		ADC857FA29BB5D19009C2877 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		ADC857FC29BB5D8F009C2877 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		ADE78B7929BB4541003FEC44 /* TrainingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TrainingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE78B7C29BB4541003FEC44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ADE78B7E29BB4541003FEC44 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ADE78B8029BB4541003FEC44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADE78B8029BB4541003FEC44 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ADE78B8329BB4541003FEC44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADE78B8629BB4541003FEC44 /* TrainingApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TrainingApp.xcdatamodel; sourceTree = "<group>"; };
 		ADE78B8829BB4542003FEC44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -133,6 +141,7 @@
 		ADE78BAF29BB4594003FEC44 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				ADC857F629BB5A3B009C2877 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -149,7 +158,10 @@
 		ADE78BB129BB459F003FEC44 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				ADE78B8029BB4541003FEC44 /* ViewController.swift */,
+				ADE78B8029BB4541003FEC44 /* LoginViewController.swift */,
+				ADC857F829BB5BC0009C2877 /* HomeViewController.swift */,
+				ADC857FA29BB5D19009C2877 /* SignUpViewController.swift */,
+				ADC857FC29BB5D8F009C2877 /* ForgotPasswordViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,10 +297,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE78B8129BB4541003FEC44 /* ViewController.swift in Sources */,
+				ADC857FD29BB5D8F009C2877 /* ForgotPasswordViewController.swift in Sources */,
+				ADE78B8129BB4541003FEC44 /* LoginViewController.swift in Sources */,
+				ADC857FB29BB5D19009C2877 /* SignUpViewController.swift in Sources */,
 				ADE78B8729BB4541003FEC44 /* TrainingApp.xcdatamodeld in Sources */,
 				ADE78B7D29BB4541003FEC44 /* AppDelegate.swift in Sources */,
+				ADC857F729BB5A3B009C2877 /* User.swift in Sources */,
 				ADE78B7F29BB4541003FEC44 /* SceneDelegate.swift in Sources */,
+				ADC857F929BB5BC0009C2877 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
