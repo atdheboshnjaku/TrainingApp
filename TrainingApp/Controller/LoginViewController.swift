@@ -18,7 +18,6 @@ class LoginViewController: UIViewController {
     }
 
     @IBAction func loginButtonPressed(_ sender: UIButton) {
-
         
     }
     
@@ -37,9 +36,9 @@ class LoginViewController: UIViewController {
     override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
         
         if identifier == "goToHome" {
-            if userNameTextField.text == "" && passwordTextField.text == "" {
+            if userNameTextField.text == "" || passwordTextField.text == "" {
                 let alert = UIAlertController(
-                    title: "Whoops!",
+                    title: "Missing fields!",
                     message: "Please enter your username and password!",
                     preferredStyle: .alert)
                 alert.addAction(UIAlertAction(

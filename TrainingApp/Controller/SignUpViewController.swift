@@ -39,7 +39,7 @@ class SignUpViewController: UIViewController {
         } else if userNameTextField.text == "" || passwordTextField.text == "" || repeatPasswordTextField.text == "" || emailTextField.text == "" || addressTextField.text == "" || numberTextField.text == "" {
             
             let alert = UIAlertController(
-                title: "Empty fields!",
+                title: "Missing fields!",
                 message: "Please make sure you fill in all fields",
                 preferredStyle: .alert)
             alert.addAction(UIAlertAction(

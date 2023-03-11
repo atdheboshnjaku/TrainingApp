@@ -104,10 +104,59 @@
                     <view key="view" contentMode="scaleToFill" id="SS0-RF-eT2">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="ovG-f9-Epb">
+                                <rect key="frame" x="20" y="133" width="353" height="249"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Old password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uBU-0e-DGR">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="45"/>
+                                        <color key="backgroundColor" red="0.87898516414141414" green="0.56483756442194699" blue="0.20942137086411114" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="New password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0zQ-nK-sDi">
+                                        <rect key="frame" x="0.0" y="68" width="353" height="45"/>
+                                        <color key="backgroundColor" red="0.87898516410000005" green="0.56483756439999999" blue="0.20942137089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gfH-35-0JS">
+                                        <rect key="frame" x="0.0" y="136" width="353" height="45"/>
+                                        <color key="backgroundColor" red="0.87898516410000005" green="0.56483756439999999" blue="0.20942137089999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="cko-as-xc2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkY-cP-oF0">
+                                        <rect key="frame" x="0.0" y="204" width="353" height="45"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Change Password"/>
+                                        <connections>
+                                            <action selector="changePasswordButtonPressed:" destination="enu-9v-jEG" eventType="touchUpInside" id="4Pw-OR-mOp"/>
+                                            <segue destination="MSd-6T-zp8" kind="show" identifier="goToHome" id="bCn-hW-hgy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="ND7-Li-Fra"/>
-                        <color key="backgroundColor" red="0.45546297737259556" green="0.87715375123399086" blue="1" alpha="0.72234581953642385" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                        <constraints>
+                            <constraint firstItem="ovG-f9-Epb" firstAttribute="leading" secondItem="ND7-Li-Fra" secondAttribute="leading" constant="20" id="JbZ-Fh-DYU"/>
+                            <constraint firstItem="ovG-f9-Epb" firstAttribute="top" secondItem="ND7-Li-Fra" secondAttribute="top" constant="30" id="kCl-oK-EAn"/>
+                            <constraint firstItem="ND7-Li-Fra" firstAttribute="trailing" secondItem="ovG-f9-Epb" secondAttribute="trailing" constant="20" id="uG3-4P-3mf"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ttf-mQ-ggM"/>
+                    <connections>
+                        <outlet property="newPasswordTextField" destination="0zQ-nK-sDi" id="huc-Po-2rF"/>
+                        <outlet property="oldPasswordTextField" destination="uBU-0e-DGR" id="oha-pL-I4f"/>
+                        <outlet property="repeatPasswordTextField" destination="gfH-35-0JS" id="3bF-wv-kgY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iSd-RR-kQJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -353,6 +402,9 @@
             <point key="canvasLocation" x="172" y="-727"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="bCn-hW-hgy"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -362,6 +414,9 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
