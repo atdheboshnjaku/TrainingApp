@@ -21,6 +21,9 @@ class HomeViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         userNameLabel.text = user?.name ?? ""
+        userEmail.text = user?.email ?? ""
+        userAddress.text = user?.address ?? ""
+        userNumber.text = user?.number ?? ""
     }
     
 

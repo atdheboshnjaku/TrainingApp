@@ -12,6 +12,6 @@ struct User {
     let name: String
     let email: String?
     let address: String?
-    let number: Int?
+    let number: String?
     
 }

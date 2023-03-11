@@ -27,11 +27,31 @@ class LoginViewController: UIViewController {
         if segue.identifier == "goToHome" {
 
             let homeViewController = segue.destination as? HomeViewController
-            let user = User(name: userNameTextField.text ?? "", email: "", address: "", number: 0)
+            let user = User(name: userNameTextField.text ?? "", email: "", address: "", number: "")
             homeViewController?.user = user
 
         }
 
+    }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
+        
+        if identifier == "goToHome" {
+            if userNameTextField.text == "" && passwordTextField.text == "" {
+                let alert = UIAlertController(
+                    title: "Whoops!",
+                    message: "Please enter your username and password!",
+                    preferredStyle: .alert)
+                alert.addAction(UIAlertAction(
+                    title: NSLocalizedString("Let me try again!",
+                    comment: "Default action"),
+                    style: .default))
+                self.present(alert, animated: true, completion: nil)
+                return false
+            }
+        }
+        return true
+        
     }
     
 }

@@ -105,7 +105,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="ND7-Li-Fra"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.45546297737259556" green="0.87715375123399086" blue="1" alpha="0.72234581953642385" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ttf-mQ-ggM"/>
                 </viewController>
@@ -250,14 +250,89 @@
                     <view key="view" contentMode="scaleToFill" id="73f-LW-GSw">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VLs-l5-HGt">
+                                <rect key="frame" x="20" y="133" width="353" height="435"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eGp-Ha-WdZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="45"/>
+                                        <color key="backgroundColor" red="0.90522411619999998" green="0.75715671569999998" blue="0.26501097000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evz-iF-B0f">
+                                        <rect key="frame" x="0.0" y="65" width="353" height="45"/>
+                                        <color key="backgroundColor" red="0.90522411619999998" green="0.75715671569999998" blue="0.26501097000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wSs-Xr-VH7">
+                                        <rect key="frame" x="0.0" y="130" width="353" height="45"/>
+                                        <color key="backgroundColor" red="0.90522411619999998" green="0.75715671569999998" blue="0.26501097000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k3s-Ub-OJd">
+                                        <rect key="frame" x="0.0" y="195" width="353" height="45"/>
+                                        <color key="backgroundColor" red="0.90522411619999998" green="0.75715671569999998" blue="0.26501097000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="148-gX-56h">
+                                        <rect key="frame" x="0.0" y="260" width="353" height="45"/>
+                                        <color key="backgroundColor" red="0.90522411619999998" green="0.75715671569999998" blue="0.26501097000000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KUI-Jo-DrV">
+                                        <rect key="frame" x="0.0" y="325" width="353" height="45"/>
+                                        <color key="backgroundColor" red="0.90522411616161613" green="0.75715671570560894" blue="0.26501097002837126" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="8v3-fG-QpN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m3w-OB-LRe">
+                                        <rect key="frame" x="0.0" y="390" width="353" height="45"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signupButtonPressed:" destination="7a3-b4-tAb" eventType="touchUpInside" id="nUR-cu-cPM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="aAQ-PL-a15"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="VLs-l5-HGt" firstAttribute="top" secondItem="aAQ-PL-a15" secondAttribute="top" constant="30" id="Ecp-iD-WCi"/>
+                            <constraint firstItem="aAQ-PL-a15" firstAttribute="trailing" secondItem="VLs-l5-HGt" secondAttribute="trailing" constant="20" id="VVp-yt-WVC"/>
+                            <constraint firstItem="VLs-l5-HGt" firstAttribute="leading" secondItem="aAQ-PL-a15" secondAttribute="leading" constant="20" id="cF4-oq-OXs"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="ySF-pA-SgD"/>
+                    <connections>
+                        <outlet property="addressTextField" destination="148-gX-56h" id="Afl-SV-yXP"/>
+                        <outlet property="emailTextField" destination="k3s-Ub-OJd" id="H3H-aJ-TTf"/>
+                        <outlet property="numberTextField" destination="KUI-Jo-DrV" id="SnI-R5-ois"/>
+                        <outlet property="passwordTextField" destination="evz-iF-B0f" id="N6x-C0-U4G"/>
+                        <outlet property="repeatPasswordTextField" destination="wSs-Xr-VH7" id="slv-7w-OjU"/>
+                        <outlet property="userNameTextField" destination="eGp-Ha-WdZ" id="pb9-OZ-ony"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z89-zr-yfO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1024" y="773"/>
+            <point key="canvasLocation" x="1023.6641221374045" y="772.53521126760563"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6Ow-52-PKL">
@@ -287,6 +362,9 @@
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
